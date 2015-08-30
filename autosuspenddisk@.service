@@ -1,0 +1,11 @@
+[Unit]
+Description=Suspends /dev/disk/by-uuid/%i on startup
+ConditionPathExists=/dev/disk/by-uuid/%i
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/hdparm -y /dev/disk/by-uuid/%i
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
