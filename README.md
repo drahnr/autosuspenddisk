@@ -1,6 +1,20 @@
 # autosuspenddisk
 
-If you have many disks, this script and systemd unit file will suspend all of the listed ones.
+Suspends disks on bootup.
+
+### Why
+
+The best way to handle the many disk situation would be to use PUIS (power up in standby) but since many consumer grade mainboards do not support that standard, this is the way to go.
+
+### How
+
+I created a systemd template unit file which you can then use to suspend any disk based on its UUID.
+
+### Install
+
+```bash
+su -c'./setup.sh'
+```
 
 ### Usage
 
