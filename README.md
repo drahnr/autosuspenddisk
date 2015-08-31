@@ -4,7 +4,7 @@ Suspends disks on bootup.
 
 ### Why
 
-The best way to handle the many disk situation would be to use PUIS (power up in standby) but since many consumer grade mainboards do not support that standard, this is the way to go.
+The best way to handle the many disk situation would be to use [PUIS (power up in standby)](https://en.wikipedia.org/wiki/Power-up_in_standby) but since many consumer grade mainboards do not support that standard, this is the way to go.
 
 ### How
 
